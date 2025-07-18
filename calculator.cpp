@@ -32,9 +32,15 @@ int main (){
             std::cout<<" result:"<<result<<'\n';
             break;
         case '/':
+            if(num2==0){
+                std::cout<<"You can't divide by 0!"<<'\n';
+                break;
+            }
+            else{
             result = num1 /num2;
             std::cout<<" result: "<<result<<'\n';
             break;
+            }
         default:
         std::cout<<"That wasn't a valid response"<<'\n';
         break;
